@@ -1,0 +1,7 @@
+Este diretório é para arquivos estáticos.
+
+Adicione aqui:
+- Seu CV em PDF (cv.pdf)
+- Imagens de projetos (projects/)
+- Sua foto de perfil
+- Favicon e outros assets

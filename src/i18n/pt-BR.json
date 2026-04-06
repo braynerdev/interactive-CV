@@ -1,0 +1,223 @@
+{
+  "nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "experience": "Experiência",
+    "education": "Educação",
+    "skills": "Habilidades",
+    "certifications": "Certificações",
+    "projects": "Projetos",
+    "languages": "Idiomas",
+    "contact": "Contato"
+  },
+  "hero": {
+    "greeting": "Olá, eu sou",
+    "name": "João Victor de Souza Brayner",
+    "title": "[TÍTULO PROFISSIONAL AQUI]",
+    "description": "[RESUMO PROFISSIONAL AQUI - Adicione uma breve descrição sobre você, sua experiência e o que você busca]",
+    "downloadCV": "Download CV",
+    "contact": "Contato"
+  },
+  "about": {
+    "title": "Sobre Mim",
+    "subtitle": "Conheça um pouco mais sobre minha trajetória",
+    "description": "[DESCRIÇÃO DETALHADA AQUI - Fale sobre sua trajetória profissional, motivações, objetivos de carreira e o que te diferencia como profissional]",
+    "highlights": {
+      "experience": {
+        "title": "Anos de Experiência",
+        "value": "[X]+"
+      },
+      "projects": {
+        "title": "Projetos Concluídos",
+        "value": "[XX]+"
+      },
+      "clients": {
+        "title": "Clientes Satisfeitos",
+        "value": "[XX]+"
+      }
+    }
+  },
+  "experience": {
+    "title": "Experiência Profissional",
+    "subtitle": "Minha trajetória no mercado de trabalho",
+    "items": [
+      {
+        "role": "[CARGO 1]",
+        "company": "[EMPRESA 1]",
+        "period": "[MÊS/ANO] - Presente",
+        "description": "[DESCRIÇÃO DAS ATIVIDADES E CONQUISTAS NESTE CARGO]",
+        "highlights": ["[DESTAQUE 1]", "[DESTAQUE 2]", "[DESTAQUE 3]"]
+      },
+      {
+        "role": "[CARGO 2]",
+        "company": "[EMPRESA 2]",
+        "period": "[MÊS/ANO] - [MÊS/ANO]",
+        "description": "[DESCRIÇÃO DAS ATIVIDADES E CONQUISTAS NESTE CARGO]",
+        "highlights": ["[DESTAQUE 1]", "[DESTAQUE 2]", "[DESTAQUE 3]"]
+      },
+      {
+        "role": "[CARGO 3]",
+        "company": "[EMPRESA 3]",
+        "period": "[MÊS/ANO] - [MÊS/ANO]",
+        "description": "[DESCRIÇÃO DAS ATIVIDADES E CONQUISTAS NESTE CARGO]",
+        "highlights": ["[DESTAQUE 1]", "[DESTAQUE 2]"]
+      }
+    ]
+  },
+  "education": {
+    "title": "Educação",
+    "subtitle": "Minha formação acadêmica",
+    "items": [
+      {
+        "degree": "[GRAU/TÍTULO]",
+        "institution": "[INSTITUIÇÃO DE ENSINO]",
+        "period": "[ANO INÍCIO] - [ANO FIM]",
+        "description": "[DESCRIÇÃO DO CURSO OU DESTAQUES]"
+      },
+      {
+        "degree": "[GRAU/TÍTULO]",
+        "institution": "[INSTITUIÇÃO DE ENSINO]",
+        "period": "[ANO INÍCIO] - [ANO FIM]",
+        "description": "[DESCRIÇÃO DO CURSO OU DESTAQUES]"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Habilidades",
+    "subtitle": "Minhas competências técnicas e interpessoais",
+    "hardSkills": {
+      "title": "Hard Skills",
+      "items": [
+        { "name": "[TECNOLOGIA 1]", "level": 90 },
+        { "name": "[TECNOLOGIA 2]", "level": 85 },
+        { "name": "[TECNOLOGIA 3]", "level": 80 },
+        { "name": "[TECNOLOGIA 4]", "level": 75 },
+        { "name": "[TECNOLOGIA 5]", "level": 70 },
+        { "name": "[TECNOLOGIA 6]", "level": 65 }
+      ]
+    },
+    "softSkills": {
+      "title": "Soft Skills",
+      "items": [
+        "[SOFT SKILL 1]",
+        "[SOFT SKILL 2]",
+        "[SOFT SKILL 3]",
+        "[SOFT SKILL 4]",
+        "[SOFT SKILL 5]",
+        "[SOFT SKILL 6]"
+      ]
+    }
+  },
+  "certifications": {
+    "title": "Certificações & Cursos",
+    "subtitle": "Aprendizado contínuo e qualificações",
+    "items": [
+      {
+        "name": "[NOME DA CERTIFICAÇÃO 1]",
+        "institution": "[INSTITUIÇÃO]",
+        "year": "[ANO]",
+        "credential": "[ID DA CREDENCIAL - OPCIONAL]"
+      },
+      {
+        "name": "[NOME DA CERTIFICAÇÃO 2]",
+        "institution": "[INSTITUIÇÃO]",
+        "year": "[ANO]",
+        "credential": "[ID DA CREDENCIAL - OPCIONAL]"
+      },
+      {
+        "name": "[NOME DO CURSO 1]",
+        "institution": "[INSTITUIÇÃO]",
+        "year": "[ANO]",
+        "credential": ""
+      },
+      {
+        "name": "[NOME DO CURSO 2]",
+        "institution": "[INSTITUIÇÃO]",
+        "year": "[ANO]",
+        "credential": ""
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projetos",
+    "subtitle": "Alguns dos meus trabalhos recentes",
+    "viewProject": "Ver Projeto",
+    "viewCode": "Ver Código",
+    "items": [
+      {
+        "name": "[NOME DO PROJETO 1]",
+        "description": "[DESCRIÇÃO DO PROJETO 1 - Explique o objetivo, tecnologias utilizadas e seu papel no desenvolvimento]",
+        "technologies": ["[TECH 1]", "[TECH 2]", "[TECH 3]"],
+        "github": "https://github.com/[SEU-USUARIO]/[REPO]",
+        "demo": "https://[URL-DO-PROJETO]",
+        "image": "/projects/project1.jpg"
+      },
+      {
+        "name": "[NOME DO PROJETO 2]",
+        "description": "[DESCRIÇÃO DO PROJETO 2]",
+        "technologies": ["[TECH 1]", "[TECH 2]", "[TECH 3]"],
+        "github": "https://github.com/[SEU-USUARIO]/[REPO]",
+        "demo": "https://[URL-DO-PROJETO]",
+        "image": "/projects/project2.jpg"
+      },
+      {
+        "name": "[NOME DO PROJETO 3]",
+        "description": "[DESCRIÇÃO DO PROJETO 3]",
+        "technologies": ["[TECH 1]", "[TECH 2]"],
+        "github": "https://github.com/[SEU-USUARIO]/[REPO]",
+        "demo": "",
+        "image": "/projects/project3.jpg"
+      }
+    ]
+  },
+  "languages": {
+    "title": "Idiomas",
+    "subtitle": "Competências linguísticas",
+    "levels": {
+      "native": "Nativo",
+      "fluent": "Fluente",
+      "advanced": "Avançado",
+      "intermediate": "Intermediário",
+      "basic": "Básico"
+    },
+    "items": [
+      { "name": "Português", "level": "native", "percentage": 100 },
+      { "name": "Inglês", "level": "intermediate", "percentage": 60 },
+      { "name": "[IDIOMA 3]", "level": "basic", "percentage": 30 }
+    ]
+  },
+  "contact": {
+    "title": "Contato",
+    "subtitle": "Vamos conversar? Entre em contato!",
+    "email": "[SEU-EMAIL@EXEMPLO.COM]",
+    "phone": "[+55 (XX) XXXXX-XXXX]",
+    "location": "[CIDADE, ESTADO - PAÍS]",
+    "linkedin": "https://linkedin.com/in/[SEU-PERFIL]",
+    "github": "https://github.com/[SEU-USUARIO]",
+    "form": {
+      "name": "Nome",
+      "namePlaceholder": "Seu nome completo",
+      "email": "E-mail",
+      "emailPlaceholder": "seu@email.com",
+      "message": "Mensagem",
+      "messagePlaceholder": "Escreva sua mensagem...",
+      "send": "Enviar Mensagem",
+      "sending": "Enviando...",
+      "success": "Mensagem enviada com sucesso!",
+      "error": "Erro ao enviar mensagem. Tente novamente."
+    }
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados.",
+    "madeWith": "Feito com",
+    "by": "por"
+  },
+  "theme": {
+    "light": "Claro",
+    "dark": "Escuro"
+  },
+  "language": {
+    "pt": "Português",
+    "en": "English"
+  }
+}
