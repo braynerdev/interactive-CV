@@ -71,10 +71,12 @@ export function Certifications() {
 
                 {item.credential && (
                   <a
-                    href="#"
+                    href={item.credential}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-1 text-sm text-primary-500 hover:text-primary-600 transition-colors"
                   >
-                    <span>Ver credencial</span>
+                    <span>{t('certifications.viewCredential') || 'Ver credencial'}</span>
                     <ExternalLink className="w-4 h-4" />
                   </a>
                 )}

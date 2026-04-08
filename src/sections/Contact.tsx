@@ -2,9 +2,15 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Mail, Phone, MapPin, Github, Linkedin, Send, CheckCircle } from 'lucide-react'
+import { Mail, Phone, MapPin, Github, Linkedin, Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react'
 import { useTranslation } from '@/hooks/useTranslation'
 import { SectionWrapper } from '@/components/SectionWrapper'
+
+interface FormErrors {
+  name?: string
+  email?: string
+  message?: string
+}
 
 export function Contact() {
   const { t } = useTranslation()
@@ -13,20 +19,114 @@ export function Contact() {
     email: '',
     message: '',
   })
+  const [errors, setErrors] = useState<FormErrors>({})
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [isValidatingEmail, setIsValidatingEmail] = useState(false)
+
+  const validateName = (name: string): string | undefined => {
+    const words = name.trim().split(/\s+/).filter(word => word.length > 0)
+    if (words.length < 2) {
+      return t('contact.form.errors.nameRequired')
+    }
+    return undefined
+  }
+
+  const validateEmailFormat = (email: string): string | undefined => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    if (!emailRegex.test(email)) {
+      return t('contact.form.errors.emailInvalid')
+    }
+    return undefined
+  }
+
+  const validateEmailDomain = async (email: string): Promise<string | undefined> => {
+    try {
+      const response = await fetch('/api/validate-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      })
+      
+      const data = await response.json()
+      
+      if (!data.valid) {
+        return t('contact.form.errors.emailDomainInvalid')
+      }
+      
+      return undefined
+    } catch {
+      return undefined
+    }
+  }
+
+  const validateMessage = (message: string): string | undefined => {
+    if (message.trim().length < 20) {
+      return t('contact.form.errors.messageMinLength')
+    }
+    return undefined
+  }
+
+  const validateForm = async (): Promise<boolean> => {
+    const nameError = validateName(formState.name)
+    const emailFormatError = validateEmailFormat(formState.email)
+    const messageError = validateMessage(formState.message)
+    
+    if (nameError || emailFormatError || messageError) {
+      setErrors({
+        name: nameError,
+        email: emailFormatError,
+        message: messageError,
+      })
+      return false
+    }
+    
+    setIsValidatingEmail(true)
+    const emailDomainError = await validateEmailDomain(formState.email)
+    setIsValidatingEmail(false)
+    
+    if (emailDomainError) {
+      setErrors({ email: emailDomainError })
+      return false
+    }
+    
+    setErrors({})
+    return true
+  }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    
     setIsSubmitting(true)
     
-    await new Promise((resolve) => setTimeout(resolve, 1500))
+    const isValid = await validateForm()
     
-    setIsSubmitting(false)
-    setIsSubmitted(true)
-    setFormState({ name: '', email: '', message: '' })
+    if (!isValid) {
+      setIsSubmitting(false)
+      return
+    }
     
-    setTimeout(() => setIsSubmitted(false), 3000)
+    const phoneNumber = t('contact.phone').replace(/\D/g, '')
+    
+    const message = encodeURIComponent(
+      `*Contato via Portfolio*\n\n` +
+      `*Nome:* ${formState.name}\n` +
+      `*Email:* ${formState.email}\n\n` +
+      `*Mensagem:*\n${formState.message}`
+    )
+    
+    const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`
+    
+    window.open(whatsappLink, '_blank')
+    
+    setTimeout(() => {
+      setIsSubmitting(false)
+      setIsSubmitted(true)
+      setFormState({ name: '', email: '', message: '' })
+      setErrors({})
+      
+      setTimeout(() => setIsSubmitted(false), 3000)
+    }, 500)
   }
 
   const contactInfo = [
@@ -125,11 +225,19 @@ export function Contact() {
                 <input
                   type="text"
                   value={formState.name}
-                  onChange={(e) => setFormState({ ...formState, name: e.target.value })}
+                  onChange={(e) => {
+                    setFormState({ ...formState, name: e.target.value })
+                    if (errors.name) setErrors({ ...errors, name: undefined })
+                  }}
                   placeholder={t('contact.form.namePlaceholder')}
-                  className="input-field"
-                  required
+                  className={`input-field ${errors.name ? 'border-red-500 focus:ring-red-500' : ''}`}
                 />
+                {errors.name && (
+                  <p className="mt-1 text-sm text-red-500 flex items-center gap-1">
+                    <AlertCircle className="w-4 h-4" />
+                    {errors.name}
+                  </p>
+                )}
               </div>
 
               <div>
@@ -139,11 +247,19 @@ export function Contact() {
                 <input
                   type="email"
                   value={formState.email}
-                  onChange={(e) => setFormState({ ...formState, email: e.target.value })}
+                  onChange={(e) => {
+                    setFormState({ ...formState, email: e.target.value })
+                    if (errors.email) setErrors({ ...errors, email: undefined })
+                  }}
                   placeholder={t('contact.form.emailPlaceholder')}
-                  className="input-field"
-                  required
+                  className={`input-field ${errors.email ? 'border-red-500 focus:ring-red-500' : ''}`}
                 />
+                {errors.email && (
+                  <p className="mt-1 text-sm text-red-500 flex items-center gap-1">
+                    <AlertCircle className="w-4 h-4" />
+                    {errors.email}
+                  </p>
+                )}
               </div>
 
               <div>
@@ -152,12 +268,23 @@ export function Contact() {
                 </label>
                 <textarea
                   value={formState.message}
-                  onChange={(e) => setFormState({ ...formState, message: e.target.value })}
+                  onChange={(e) => {
+                    setFormState({ ...formState, message: e.target.value })
+                    if (errors.message) setErrors({ ...errors, message: undefined })
+                  }}
                   placeholder={t('contact.form.messagePlaceholder')}
                   rows={5}
-                  className="input-field resize-none"
-                  required
+                  className={`input-field resize-none ${errors.message ? 'border-red-500 focus:ring-red-500' : ''}`}
                 />
+                {errors.message && (
+                  <p className="mt-1 text-sm text-red-500 flex items-center gap-1">
+                    <AlertCircle className="w-4 h-4" />
+                    {errors.message}
+                  </p>
+                )}
+                <p className="mt-1 text-xs text-gray-500">
+                  {formState.message.length}/20 {t('contact.form.minChars')}
+                </p>
               </div>
 
               <motion.button

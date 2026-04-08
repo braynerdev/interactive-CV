@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Heart, Github, Linkedin, Mail } from 'lucide-react'
+import { Github, Linkedin, Mail } from 'lucide-react'
 import { useTranslation } from '@/hooks/useTranslation'
 
 export function Footer() {
@@ -30,7 +30,7 @@ export function Footer() {
             className="flex items-center gap-4"
           >
             <a
-              href="https://github.com/[SEU-USUARIO]"
+              href="https://github.com/braynerdev"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-lg text-gray-600 dark:text-gray-400 hover:text-primary-500 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
@@ -38,7 +38,7 @@ export function Footer() {
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="https://linkedin.com/in/[SEU-PERFIL]"
+              href="https://www.linkedin.com/in/jo%C3%A3o-victor-brayner-817599323/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-lg text-gray-600 dark:text-gray-400 hover:text-primary-500 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
@@ -46,7 +46,7 @@ export function Footer() {
               <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="mailto:[SEU-EMAIL@EXEMPLO.COM]"
+              href="mailto:dev.brayner@outlook.com"
               className="p-2 rounded-lg text-gray-600 dark:text-gray-400 hover:text-primary-500 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
             >
               <Mail className="w-5 h-5" />
@@ -60,9 +60,7 @@ export function Footer() {
             transition={{ delay: 0.2 }}
             className="flex items-center gap-1 text-gray-600 dark:text-gray-400"
           >
-            <span>{t('footer.madeWith')}</span>
-            <Heart className="w-4 h-4 text-red-500 fill-red-500" />
-            <span>{t('footer.by')} JV</span>
+            <span>{t('footer.madeBy')} João Brayner</span>
           </motion.div>
         </div>
       </div>

@@ -13,27 +13,27 @@
   "hero": {
     "greeting": "Hello, I'm",
     "name": "João Victor de Souza Brayner",
-    "title": "[PROFESSIONAL TITLE HERE]",
-    "description": "[PROFESSIONAL SUMMARY HERE - Add a brief description about yourself, your experience and what you're looking for]",
+    "title": "Fullstack Developer",
+    "description": "Currently I work as a fullstack developer at Pitang",
     "downloadCV": "Download CV",
     "contact": "Contact"
   },
   "about": {
     "title": "About Me",
     "subtitle": "Get to know a little more about my journey",
-    "description": "[DETAILED DESCRIPTION HERE - Talk about your professional journey, motivations, career goals and what sets you apart as a professional]",
+    "description": "I am a fullstack developer with a focus on backend, with experience in developing REST APIs and distributed systems. I work with technologies such as C#, .NET, Java (Spring Boot), Python (Django), as well as TypeScript/JavaScript with React and Next.js on the frontend. I have experience with different architectural patterns, including microservices and modular monoliths, applying Clean Architecture principles to ensure scalability, maintainability and low coupling. I also have familiarity with practices such as DDD (Domain-Driven Design), CQRS and event-driven architectures, contributing to building more decoupled and resilient systems. In the data ecosystem, I work with relational databases such as PostgreSQL, MySQL, SQL Server and Oracle, as well as using Redis for caching and performance optimization in applications. I have experience with data modeling, query optimization and service integration. Currently I work at Pitang, for 1 year, on the Grande Recife Transport Consortium project, contributing to the development and evolution of critical systems, focusing on performance, service integration and maintenance of production applications. Previously, I worked as an intern at Grande Recife itself, where I had direct contact with real systems and participated in relevant deliveries. I also have experience with containerization using Docker, as well as development practices such as versioning with Git, layer organization and consistent application of best development practices.",
     "highlights": {
       "experience": {
         "title": "Years of Experience",
-        "value": "[X]+"
+        "value": "3+"
       },
       "projects": {
         "title": "Completed Projects",
-        "value": "[XX]+"
+        "value": "10+"
       },
       "clients": {
         "title": "Satisfied Clients",
-        "value": "[XX]+"
+        "value": "8+"
       }
     }
   },
@@ -42,25 +42,32 @@
     "subtitle": "My professional journey",
     "items": [
       {
-        "role": "[POSITION 1]",
-        "company": "[COMPANY 1]",
-        "period": "[MONTH/YEAR] - Present",
-        "description": "[DESCRIPTION OF ACTIVITIES AND ACHIEVEMENTS IN THIS ROLE]",
-        "highlights": ["[HIGHLIGHT 1]", "[HIGHLIGHT 2]", "[HIGHLIGHT 3]"]
+        "role": "Freelancer",
+        "company": "Self-employed",
+        "period": "2023 - Present",
+        "description": "I work as a freelancer developing customized solutions for clients, focusing on backend and system integrations.",
+        "highlights": ["Software architecture design", "RESTful API development", "Legacy system integrations", "Performance optimization", "MVT application development"]
       },
       {
-        "role": "[POSITION 2]",
-        "company": "[COMPANY 2]",
-        "period": "[MONTH/YEAR] - [MONTH/YEAR]",
-        "description": "[DESCRIPTION OF ACTIVITIES AND ACHIEVEMENTS IN THIS ROLE]",
-        "highlights": ["[HIGHLIGHT 1]", "[HIGHLIGHT 2]", "[HIGHLIGHT 3]"]
+        "role": "Intern",
+        "company": "Grande Recife",
+        "period": "2024 - 2025",
+        "description": "I worked as an intern on the Grande Recife project, where I had direct contact with real systems and participated in relevant deliveries.",
+        "highlights": ["API development with .NET", "Working on production systems", "Database integration", "Best practices and Git", "Bug fixes and performance improvements"]
       },
       {
-        "role": "[POSITION 3]",
-        "company": "[COMPANY 3]",
-        "period": "[MONTH/YEAR] - [MONTH/YEAR]",
-        "description": "[DESCRIPTION OF ACTIVITIES AND ACHIEVEMENTS IN THIS ROLE]",
-        "highlights": ["[HIGHLIGHT 1]", "[HIGHLIGHT 2]"]
+        "role": "Fullstack Developer",
+        "company": "Pitang",
+        "period": "2025 - Present",
+        "description": "I work on the development and evolution of software solutions, focusing on backend, APIs and system integrations.",
+        "highlights": [
+          "REST API development with .NET and ASP.NET Core",
+          "Participation in system design and software architecture decisions",
+          "Integration with legacy systems and external services",
+          "Data modeling and manipulation in relational databases",
+          "Performance optimization and bug fixes in production",
+          "Application of best practices (Clean Architecture, Git versioning)"
+        ]
       }
     ]
   },
@@ -69,16 +76,10 @@
     "subtitle": "My academic background",
     "items": [
       {
-        "degree": "[DEGREE/TITLE]",
-        "institution": "[EDUCATIONAL INSTITUTION]",
-        "period": "[START YEAR] - [END YEAR]",
-        "description": "[COURSE DESCRIPTION OR HIGHLIGHTS]"
-      },
-      {
-        "degree": "[DEGREE/TITLE]",
-        "institution": "[EDUCATIONAL INSTITUTION]",
-        "period": "[START YEAR] - [END YEAR]",
-        "description": "[COURSE DESCRIPTION OR HIGHLIGHTS]"
+        "degree": "Systems Analysis and Development",
+        "institution": "Senac Pernambuco College",
+        "period": "2024 - 2026",
+        "description": "Undergraduate degree in Systems Analysis and Development, focusing on software and systems development."
       }
     ]
   },
@@ -88,53 +89,65 @@
     "hardSkills": {
       "title": "Hard Skills",
       "items": [
-        { "name": "[TECHNOLOGY 1]", "level": 90 },
-        { "name": "[TECHNOLOGY 2]", "level": 85 },
-        { "name": "[TECHNOLOGY 3]", "level": 80 },
-        { "name": "[TECHNOLOGY 4]", "level": 75 },
-        { "name": "[TECHNOLOGY 5]", "level": 70 },
-        { "name": "[TECHNOLOGY 6]", "level": 65 }
+        { "name": "C#", "level": 90 },
+        { "name": ".NET / ASP.NET Core", "level": 90 },
+        { "name": "Git", "level": 85 },
+        { "name": "Python (Django)", "level": 80 },
+        { "name": "SQL (PostgreSQL, MySQL, SQL Server)", "level": 75 },
+        { "name": "Docker", "level": 60 },
+        { "name": "Redis", "level": 60 },
+        { "name": "TypeScript / JavaScript", "level": 60 },
+        { "name": "DevOps", "level": 50 },
+        { "name": "Java (Spring Boot)", "level": 50 },
+        { "name": "React / Next.js", "level": 40 }
       ]
     },
     "softSkills": {
       "title": "Soft Skills",
       "items": [
-        "[SOFT SKILL 1]",
-        "[SOFT SKILL 2]",
-        "[SOFT SKILL 3]",
-        "[SOFT SKILL 4]",
-        "[SOFT SKILL 5]",
-        "[SOFT SKILL 6]"
+        "Complex problem solving",
+        "Analytical thinking",
+        "Clear technical communication",
+        "Team collaboration",
+        "Organization and discipline in development",
+        "Continuous learning"
       ]
     }
   },
   "certifications": {
     "title": "Certifications & Courses",
     "subtitle": "Continuous learning and qualifications",
+    "viewCredential": "View credential",
     "items": [
       {
-        "name": "[CERTIFICATION NAME 1]",
-        "institution": "[INSTITUTION]",
-        "year": "[YEAR]",
-        "credential": "[CREDENTIAL ID - OPTIONAL]"
+        "name": "Course equivalent to the Programming Logic discipline of college. We will use C# as the language and Visual Studio.",
+        "institution": "Udemy",
+        "year": "2024",
+        "credential": "https://www.udemy.com/certificate/UC-ccd7bea3-73e5-48c6-b152-01d8241d1fe6/"
       },
       {
-        "name": "[CERTIFICATION NAME 2]",
-        "institution": "[INSTITUTION]",
-        "year": "[YEAR]",
-        "credential": "[CREDENTIAL ID - OPTIONAL]"
+        "name": "The most didactic and complete C# and OOP course: composition, inheritance, collections, files, LINQ, lambda, delegates and much more",
+        "institution": "Udemy",
+        "year": "2025",
+        "credential": "https://www.udemy.com/certificate/UC-1ecec7c8-aec1-4adb-aff3-3cfd3f310e66/"
       },
       {
-        "name": "[COURSE NAME 1]",
-        "institution": "[INSTITUTION]",
-        "year": "[YEAR]",
-        "credential": ""
+        "name": "Web Development with Python and Django Framework: Essentials",
+        "institution": "Udemy",
+        "year": "2025",
+        "credential": "https://www.udemy.com/certificate/UC-998a9aed-1efe-4db9-9b9e-1ac645b516df/"
       },
       {
-        "name": "[COURSE NAME 2]",
-        "institution": "[INSTITUTION]",
-        "year": "[YEAR]",
-        "credential": ""
+        "name": "The essentials for creating Web APIs on the .NET platform",
+        "institution": "Udemy",
+        "year": "2025",
+        "credential": "https://www.udemy.com/certificate/UC-92d1455e-dfd2-4ec9-96cd-b4e15c78d6a3/"
+      },
+      {
+        "name": "Master ASP .NET 10 Swagger Docker Kubernetes REST Web API RESTful JWT xUnit Testcontainers React JS from 0 to Azure, GCP and more",
+        "institution": "Udemy",
+        "year": "2026",
+        "credential": "https://www.udemy.com/certificate/UC-672a4bf2-0c9f-4102-ad07-a951b686f814/"
       }
     ]
   },
@@ -145,28 +158,81 @@
     "viewCode": "View Code",
     "items": [
       {
-        "name": "[PROJECT NAME 1]",
-        "description": "[PROJECT 1 DESCRIPTION - Explain the objective, technologies used and your role in development]",
-        "technologies": ["[TECH 1]", "[TECH 2]", "[TECH 3]"],
-        "github": "https://github.com/[YOUR-USERNAME]/[REPO]",
-        "demo": "https://[PROJECT-URL]",
-        "image": "/projects/project1.jpg"
+        "name": "API AUTH",
+        "description": "Centralized authentication and authorization API for multiple systems, with RBAC support and multi-tenant architecture, ensuring data isolation, scalability and granular access control. Developed with C#, ASP.NET Core and PostgreSQL, following Clean Architecture, DDD and patterns such as CQRS and MediatR.",
+        "Architecture": ["Clean Architecture", "Domain-Driven Design", "CQRS", "MediatR", "Entity Framework Core"],
+        "technologies": ["C#", "ASP.NET Core", "PostgreSQL", "Entity Framework Core"],
+        "github": "https://github.com/braynerdev/api-auth.git",
+        "status": "In development",
+        "image": "/projects/project1.jpg",
+        "level_code": "public"
       },
       {
-        "name": "[PROJECT NAME 2]",
-        "description": "[PROJECT 2 DESCRIPTION]",
-        "technologies": ["[TECH 1]", "[TECH 2]", "[TECH 3]"],
-        "github": "https://github.com/[YOUR-USERNAME]/[REPO]",
-        "demo": "https://[PROJECT-URL]",
-        "image": "/projects/project2.jpg"
+        "name": "API CATALOG",
+        "description": "Product catalog API, designed to provide scalable and secure endpoints, with product, category and inventory management. Developed in C# with ASP.NET Core and PostgreSQL, using Entity Framework Core and layered architecture.",
+        "Architecture": ["Layered Architecture"],
+        "technologies": ["C#", "ASP.NET Core", "PostgreSQL", "Entity Framework Core"],
+        "github": "https://github.com/braynerdev/api-catalogo.git",
+        "status": "Completed",
+        "image": "/projects/project2.jpg",
+        "level_code": "public"
       },
       {
-        "name": "[PROJECT NAME 3]",
-        "description": "[PROJECT 3 DESCRIPTION]",
-        "technologies": ["[TECH 1]", "[TECH 2]"],
-        "github": "https://github.com/[YOUR-USERNAME]/[REPO]",
-        "demo": "",
-        "image": "/projects/project3.jpg"
+        "name": "FIRE CONTROL CENTER API",
+        "description": "Backend for the fire monitoring and control system of the Pernambuco Fire Department, developed in Java with Spring Boot and PostgreSQL. Implements layered architecture, dependency injection and modularization, ensuring reliability and efficient system maintenance.",
+        "Architecture": ["Layered Architecture"],
+        "technologies": ["Java", "Spring Boot", "PostgreSQL"],
+        "github": "https://github.com/braynerdev/backend-central-controle-fogo.git",
+        "status": "Completed",
+        "image": "/projects/project3.jpg",
+        "level_code": "public"
+      },
+      {
+        "name": "FALA AGRO",
+        "description": "Ticket sales website for agricultural sector events, developed as an academic project. Implements interactive and responsive interface using React with Vite, TypeScript and Mantine, focusing on user experience and navigation speed.",
+        "technologies": ["React", "Vite", "TypeScript", "Mantine"],
+        "github": "https://github.com/braynerdev/Fala-Agro.git",
+        "status": "Completed",
+        "image": "/projects/fala-agro.jpg",
+        "level_code": "public"
+      },
+      {
+        "name": "RUMO - GRANDE RECIFE",
+        "description": "Public transportation consultation platform for the Metropolitan Region of Recife, allowing access to detailed information about lines, itineraries, stops and schedules. Developed with Django (MVT architecture), Python, JavaScript, MySQL and SQL Server, facilitating urban mobility and improving the user experience of the bus system.",
+        "Architecture": ["MVT (Model-View-Template)"],
+        "technologies": ["Python", "Django", "JavaScript", "MySQL", "SQL Server"],
+        "status": "Completed",
+        "image": "/projects/project3.jpg",
+        "view": "https://virtual.granderecife.pe.gov.br/rumo/",
+        "level_code": "private"
+      },
+      {
+        "name": "VIRTUAL TERMINAL - GRANDE RECIFE",
+        "description": "Digital services web platform for public transportation users in the Metropolitan Region of Recife, offering features such as requesting a second copy of the VEM card, credit recharge, limit increase and protocol consultation. Developed with Django (MVT architecture), Python, JavaScript and MySQL, centralizing essential urban mobility services.",
+        "Architecture": ["MVT (Model-View-Template)"],
+        "technologies": ["Python", "Django", "JavaScript", "MySQL"],
+        "status": "Completed",
+        "image": "/projects/terminal-virtual.jpg",
+        "view": "https://virtual.granderecife.pe.gov.br/",
+        "level_code": "private"
+      },
+      {
+        "name": "TICKETING - GRANDE RECIFE",
+        "description": "Electronic ticketing system for public transportation in the Metropolitan Region of Recife, responsible for passenger control, ticket validation and report generation. Developed in C# with ASP.NET Core and PostgreSQL, using Docker and Entity Framework Core to ensure accuracy, reliability and scalability.",
+        "Architecture": ["Layered Architecture"],
+        "technologies": ["C#", "ASP.NET Core", "PostgreSQL", "Oracle", "Docker", "React", "Entity Framework Core"],
+        "status": "Completed",
+        "image": "/projects/bilhetagem.jpg",
+        "level_code": "private"
+      },
+      {
+        "name": "OPERATOR REMUNERATION - GRANDE RECIFE",
+        "description": "Remuneration calculation system for public transportation operators in the Metropolitan Region of Recife, consolidating trip data, schedules and other sources to generate accurate payment calculations for operators. Developed with Python and Django Ninja (REST API), PostgreSQL and Docker, using modular monolith architecture for scalability and efficient maintenance.",
+        "Architecture": ["Monolithic Modular Architecture"],
+        "technologies": ["Python", "Django Ninja", "PostgreSQL", "Docker"],
+        "status": "In progress",
+        "image": "/projects/remuneracao.jpg",
+        "level_code": "private"
       }
     ]
   },
@@ -182,18 +248,18 @@
     },
     "items": [
       { "name": "Portuguese", "level": "native", "percentage": 100 },
-      { "name": "English", "level": "intermediate", "percentage": 60 },
-      { "name": "[LANGUAGE 3]", "level": "basic", "percentage": 30 }
+      { "name": "English", "level": "basic", "percentage": 30 },
+      { "name": "Spanish", "level": "basic", "percentage": 30 }
     ]
   },
   "contact": {
     "title": "Contact",
     "subtitle": "Let's talk? Get in touch!",
-    "email": "[YOUR-EMAIL@EXAMPLE.COM]",
-    "phone": "[+55 (XX) XXXXX-XXXX]",
-    "location": "[CITY, STATE - COUNTRY]",
-    "linkedin": "https://linkedin.com/in/[YOUR-PROFILE]",
-    "github": "https://github.com/[YOUR-USERNAME]",
+    "email": "dev.brayner@outlook.com",
+    "phone": "+55 (81) 99997-8677",
+    "location": "Olinda, Pernambuco - Brazil",
+    "linkedin": "https://www.linkedin.com/in/jo%C3%A3o-victor-brayner-817599323/",
+    "github": "https://github.com/braynerdev",
     "form": {
       "name": "Name",
       "namePlaceholder": "Your full name",
@@ -204,13 +270,19 @@
       "send": "Send Message",
       "sending": "Sending...",
       "success": "Message sent successfully!",
-      "error": "Error sending message. Please try again."
+      "error": "Error sending message. Please try again.",
+      "minChars": "minimum characters",
+      "errors": {
+        "nameRequired": "Please enter first and last name",
+        "emailInvalid": "Invalid email format",
+        "emailDomainInvalid": "Invalid email domain",
+        "messageMinLength": "Message must be at least 20 characters"
+      }
     }
   },
   "footer": {
     "rights": "All rights reserved.",
-    "madeWith": "Made with",
-    "by": "by"
+    "madeBy": "Made by"
   },
   "theme": {
     "light": "Light",

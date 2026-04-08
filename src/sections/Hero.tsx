@@ -105,23 +105,24 @@ export function Hero() {
             </motion.a>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.8 }}
-            className="absolute bottom-10 left-1/2 -translate-x-1/2"
-          >
-            <motion.button
-              onClick={scrollToAbout}
-              className="p-3 rounded-full bg-white/10 dark:bg-gray-800/50 backdrop-blur-sm border border-gray-200/20 dark:border-gray-700/20 text-gray-600 dark:text-gray-300 hover:bg-primary-500/20 hover:text-primary-500 transition-colors"
-              animate={{ y: [0, 10, 0] }}
-              transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-            >
-              <ArrowDown className="w-6 h-6" />
-            </motion.button>
-          </motion.div>
         </div>
       </div>
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.8 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20"
+      >
+        <motion.button
+          onClick={scrollToAbout}
+          className="p-3 rounded-full bg-white/10 dark:bg-gray-800/50 backdrop-blur-sm border border-gray-200/20 dark:border-gray-700/20 text-gray-600 dark:text-gray-300 hover:bg-primary-500/20 hover:text-primary-500 transition-colors"
+          animate={{ y: [0, 10, 0] }}
+          transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+        >
+          <ArrowDown className="w-6 h-6" />
+        </motion.button>
+      </motion.div>
 
       <div className="absolute top-1/4 left-10 w-72 h-72 bg-primary-500/30 rounded-full blur-[120px] animate-pulse" />
       <div className="absolute bottom-1/4 right-10 w-72 h-72 bg-accent-500/30 rounded-full blur-[120px] animate-pulse" />

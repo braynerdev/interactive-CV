@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { Briefcase, FolderGit2, Users } from 'lucide-react'
 import { useTranslation } from '@/hooks/useTranslation'
 import { SectionWrapper } from '@/components/SectionWrapper'
+import Image from 'next/image'
 
 const highlightIcons = {
   experience: Briefcase,
@@ -54,8 +55,15 @@ export function About() {
               <div className="absolute inset-0 bg-gradient-to-br from-primary-500 to-accent-500 rounded-2xl rotate-6 opacity-20" />
               <div className="absolute inset-0 bg-gradient-to-br from-primary-500 to-accent-500 rounded-2xl -rotate-6 opacity-20" />
               <div className="relative glass-card p-8 h-full flex items-center justify-center">
-                <div className="w-48 h-48 md:w-64 md:h-64 rounded-full bg-gradient-to-br from-primary-500 to-accent-500 flex items-center justify-center text-6xl md:text-8xl font-bold text-white">
-                  JV
+                <div className="w-48 h-48 md:w-64 md:h-64 rounded-full bg-gradient-to-br from-primary-500 to-accent-500 p-1 overflow-hidden">
+                  <Image
+                    src="/profile.jpeg"
+                    alt="João Brayner"
+                    width={256}
+                    height={256}
+                    className="w-full h-full object-cover rounded-full"
+                    priority
+                  />
                 </div>
               </div>
             </div>
