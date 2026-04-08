@@ -75,11 +75,11 @@ export function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+            <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8 text-justify">
               {t('about.description')}
             </p>
 
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-3 gap-2 sm:gap-4">
               {Object.entries(highlights).map(([key, value], index) => {
                 const IconComponent = highlightIcons[key as keyof typeof highlightIcons]
                 return (
@@ -89,15 +89,15 @@ export function About() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.1 }}
-                    className="glass-card p-4 text-center card-hover"
+                    className="glass-card p-2 sm:p-4 text-center card-hover"
                   >
-                    <div className="w-12 h-12 mx-auto mb-3 rounded-xl bg-gradient-to-br from-primary-500/20 to-accent-500/20 flex items-center justify-center">
-                      <IconComponent className="w-6 h-6 text-primary-500" />
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-2 sm:mb-3 rounded-xl bg-gradient-to-br from-primary-500/20 to-accent-500/20 flex items-center justify-center">
+                      <IconComponent className="w-5 h-5 sm:w-6 sm:h-6 text-primary-500" />
                     </div>
-                    <div className="text-2xl md:text-3xl font-bold gradient-text">
+                    <div className="text-xl sm:text-2xl md:text-3xl font-bold gradient-text">
                       {value.value}
                     </div>
-                    <div className="text-sm text-gray-500 dark:text-gray-400">
+                    <div className="text-xs sm:text-sm text-gray-500 dark:text-gray-400">
                       {value.title}
                     </div>
                   </motion.div>

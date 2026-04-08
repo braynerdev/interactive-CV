@@ -31,7 +31,7 @@ export function LoadingScreen() {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.5 }}
         >
-          <span className="text-2xl font-bold gradient-text">JV</span>
+          <span className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-accent-400">JV</span>
         </motion.div>
       </div>
       <motion.div
