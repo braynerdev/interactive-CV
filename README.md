@@ -1,60 +1,62 @@
-# 🚀 Portfolio Interativo | Interactive CV
+# Interactive CV Portfolio
 
-Um portfólio profissional moderno e interativo construído com Next.js, TypeScript e Tailwind CSS.
+Professional interactive portfolio built with Next.js, TypeScript, and Tailwind CSS.
 
-A modern, interactive professional portfolio built with Next.js, TypeScript, and Tailwind CSS.
+**Live Demo:** https://braynerr.netlify.app/
 
-## ✨ Características | Features
+## Features
 
-- 🌐 **Internacionalização (i18n)** - Suporte a Português (pt-BR) e Inglês (en)
-- 🌙 **Tema Dark/Light** - Toggle com persistência em localStorage
-- 🎨 **Design Futurista** - Gradientes, glassmorphism, glow effects
-- 📱 **Totalmente Responsivo** - Layout adaptável para todos os dispositivos
-- 🎭 **Animações Suaves** - Framer Motion para transições elegantes
-- 🔍 **SEO Otimizado** - Meta tags e estrutura semântica
-- ⚡ **Performance** - Otimizado para velocidade e acessibilidade
+- **Internationalization (i18n)** - Support for Portuguese (pt-BR) and English (en)
+- **Dark/Light Theme** - Toggle with localStorage persistence
+- **Modern Design** - Gradients, glassmorphism, glow effects
+- **Fully Responsive** - Adaptive layout for all devices
+- **Smooth Animations** - Framer Motion for elegant transitions
+- **SEO Optimized** - Meta tags and semantic structure
+- **High Performance** - Optimized for speed and accessibility
 
-## 🛠️ Tecnologias | Tech Stack
+## Tech Stack
 
-- **Framework:** Next.js 14 (App Router)
-- **Linguagem:** TypeScript
-- **Estilização:** Tailwind CSS
-- **Animações:** Framer Motion
-- **Estado:** Zustand
-- **Ícones:** Lucide React
+| Category | Technology |
+|----------|------------|
+| Framework | Next.js 14 (App Router) |
+| Language | TypeScript |
+| Styling | Tailwind CSS |
+| Animations | Framer Motion |
+| State Management | Zustand |
+| Icons | Lucide React |
 
-## 📦 Instalação | Installation
+## Installation
 
 ```bash
-# Instalar dependências
 npm install
-
-# Executar em desenvolvimento
 npm run dev
+```
 
-# Build para produção
+For production:
+
+```bash
 npm run build
-
-# Iniciar em produção
 npm start
 ```
 
-## 📁 Estrutura do Projeto | Project Structure
+## Project Structure
 
 ```
 src/
-├── app/                 # App Router (Next.js)
-│   ├── globals.css      # Estilos globais
-│   ├── layout.tsx       # Layout principal
-│   └── page.tsx         # Página principal
-├── components/          # Componentes reutilizáveis
+├── app/
+│   ├── api/
+│   │   └── validate-email/
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/
 │   ├── AnimatedBackground.tsx
 │   ├── Footer.tsx
 │   ├── LoadingScreen.tsx
 │   ├── Navbar.tsx
 │   ├── Providers.tsx
 │   └── SectionWrapper.tsx
-├── sections/            # Seções da página
+├── sections/
 │   ├── Hero.tsx
 │   ├── About.tsx
 │   ├── Experience.tsx
@@ -64,61 +66,33 @@ src/
 │   ├── Projects.tsx
 │   ├── Languages.tsx
 │   └── Contact.tsx
-├── hooks/               # Custom hooks
+├── hooks/
 │   ├── useTranslation.ts
 │   └── useScrollSpy.ts
-├── store/               # Estado global (Zustand)
+├── store/
 │   └── useStore.ts
-└── i18n/                # Internacionalização
+└── i18n/
     ├── index.ts
     ├── pt-BR.json
     └── en.json
 ```
 
-## 🎨 Personalização | Customization
+## Customization
 
-### Conteúdo | Content
+### Content
 
-Edite os arquivos de tradução em `src/i18n/`:
-- `pt-BR.json` - Conteúdo em Português
-- `en.json` - Conteúdo em Inglês
+Edit translation files in `src/i18n/`:
+- `pt-BR.json` - Portuguese content
+- `en.json` - English content
 
-Substitua todos os placeholders marcados com `[TEXTO]` pelo seu conteúdo real.
+### Colors
 
-### Cores | Colors
+Edit colors in `tailwind.config.ts` under `primary` and `accent` properties.
 
-Edite as cores em `tailwind.config.ts` nas propriedades `primary` e `accent`.
+### Images
 
-### Imagens | Images
-
-Adicione suas imagens na pasta `public/` e atualize as referências nos arquivos de tradução.
-
-## 📝 Placeholders
-
-O projeto vem com placeholders que precisam ser substituídos:
-
-- `[TÍTULO PROFISSIONAL AQUI]` - Seu cargo/título
-- `[RESUMO PROFISSIONAL AQUI]` - Sua descrição profissional
-- `[CARGO X]` - Cargos nas experiências
-- `[EMPRESA X]` - Nomes das empresas
-- `[TECNOLOGIA X]` - Suas tecnologias/habilidades
-- `[NOME DO PROJETO X]` - Seus projetos
-- `[SEU-EMAIL@EXEMPLO.COM]` - Seu email
-- `[SEU-USUARIO]` - Seu username do GitHub
-- etc.
-
-## 🚀 Deploy
-
-O projeto está pronto para deploy em:
-- **Vercel** (recomendado)
-- **Netlify**
-- **AWS Amplify**
-- Qualquer plataforma que suporte Next.js
-
-## 📄 Licença | License
-
-MIT License - Sinta-se livre para usar e modificar!
+Add images to `public/` folder and update references in translation files.
 
 ---
 
-Feito com ❤️ por João Victor de Souza Brayner
+Made by João Brayner
