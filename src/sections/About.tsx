@@ -94,7 +94,7 @@ export function About() {
                     <div className="w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-2 sm:mb-3 rounded-xl bg-gradient-to-br from-primary-500/20 to-accent-500/20 flex items-center justify-center">
                       <IconComponent className="w-5 h-5 sm:w-6 sm:h-6 text-primary-500" />
                     </div>
-                    <div className="text-xl sm:text-2xl md:text-3xl font-bold gradient-text">
+                    <div className="text-xl sm:text-2xl md:text-3xl font-bold text-primary-400">
                       {value.value}
                     </div>
                     <div className="text-xs sm:text-sm text-gray-500 dark:text-gray-400">
