@@ -70,7 +70,7 @@ export function Projects() {
           </motion.p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex flex-wrap justify-center gap-8">
           {items.map((project, index) => (
             <motion.div
               key={index}
@@ -78,7 +78,7 @@ export function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group"
+              className="group w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.4rem)]"
             >
               <motion.div
                 whileHover={{ y: -8, scale: 1.02 }}

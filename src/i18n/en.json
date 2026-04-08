@@ -42,18 +42,18 @@
     "subtitle": "My professional journey",
     "items": [
       {
-        "role": "Freelancer",
-        "company": "Self-employed",
-        "period": "2023 - Present",
-        "description": "I work as a freelancer developing customized solutions for clients, focusing on backend and system integrations.",
-        "highlights": ["Software architecture design", "RESTful API development", "Legacy system integrations", "Performance optimization", "MVT application development"]
-      },
-      {
         "role": "Intern",
         "company": "Grande Recife",
         "period": "2024 - 2025",
         "description": "I worked as an intern on the Grande Recife project, where I had direct contact with real systems and participated in relevant deliveries.",
         "highlights": ["API development with .NET", "Working on production systems", "Database integration", "Best practices and Git", "Bug fixes and performance improvements"]
+      },
+      {
+        "role": "Freelancer",
+        "company": "Self-employed",
+        "period": "2023 - Present",
+        "description": "I work as a freelancer developing customized solutions for clients, focusing on backend and system integrations.",
+        "highlights": ["Software architecture design", "RESTful API development", "Legacy system integrations", "Performance optimization", "MVT application development"]
       },
       {
         "role": "Fullstack Developer",

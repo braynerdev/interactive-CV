@@ -42,18 +42,18 @@
     "subtitle": "Minha trajetória no mercado de trabalho",
     "items": [
       {
-        "role": "Freelancer",
-        "company": "Autônomo",
-        "period": "2023 - Presente",
-        "description": "Atuo como freelancer desenvolvendo soluções personalizadas para clientes, com foco em backend e integrações de sistemas.",
-        "highlights": ["Desenho de arquiteturas de software", "Desenvolvimento de APIs RESTful", "Integrações com sistemas legados", "Otimização de performance", "Desenvolvimento de aplicações MVT"]
-      },
-      {
         "role": "Estagiário",
         "company": "Grande Recife",
         "period": "2024 - 2025",
         "description": "Atuei como estagiário no projeto do Grande Recife, onde tive contato direto com sistemas reais, participei de entregas relevantes.",
         "highlights": ["Desenvolvimento de APIs com .NET", "Atuação em sistemas em produção", "Integração com bancos de dados", "Boas práticas e Git", "Correções e melhorias de performance"]
+      },
+      {
+        "role": "Freelancer",
+        "company": "Autônomo",
+        "period": "2023 - Presente",
+        "description": "Atuo como freelancer desenvolvendo soluções personalizadas para clientes, com foco em backend e integrações de sistemas.",
+        "highlights": ["Desenho de arquiteturas de software", "Desenvolvimento de APIs RESTful", "Integrações com sistemas legados", "Otimização de performance", "Desenvolvimento de aplicações MVT"]
       },
       {
         "role": "Desenvolvedor Fullstack",
